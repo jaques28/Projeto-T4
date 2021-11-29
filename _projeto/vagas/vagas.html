@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family = Mulish: ital, wght @ 0,400; 0,900; 1,400 & display = swap "
+        rel=" stylesheet ">
+    <link href="/_projeto/vagas/vagas.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue.min.js"></script>
+    <title>Nitrazox - Vagas</title>
+</head>
+
+<body>
+    <div id="vagas">
+        <header>
+            <div class="center">
+                <div class="ctn-logo">
+                    <a href="/_projeto/index/index.html">
+                        <img src="/img/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="/_projeto/feedback/feedback.html">
+                        Feedback
+                    </a>
+                    <a href="/_projeto/vagas/vagas.html">
+                        Vagas
+                    </a>
+                    <a href="/_projeto/contato/contato.html">
+                        Contato
+                    </a>
+                </div>
+        </header>
+
+        <section class="main">
+            <div class="main_cta">
+                <h2>Vagas</h2> <br>
+            </div>
+        </section>
+        <section class="vagas">
+            <div class="ctn-vag" v-for="vaga in vagas" :key="vaga.id">
+                <div class="ctn-img">
+                    <img src="/img/vgaa.png" alt="">
+                </div>
+                <div class="vaga">
+                    <h2>{{vaga.nome}}</h2>
+                    <div class="ctn-requisitos">
+                        <span class="title-descr">Requisitos:</span>
+                        <p class="descricao">{{vaga.requisitos}}
+                        </p>
+                    </div>
+                    <div>
+                        <span class="title-descr">Competências:</span>
+                        <p class="descricao">{{vaga.competencias}}</p>
+                    </div>
+                    <div class="ctn-btn">
+                        <a href="/_projeto/inscreve/inscreva.html">
+                            <button class="btn-enviar">Inscreva-se</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+        <footer class="footer">
+            <div class="ctn-footer">
+                <p>© Nitrazox 2021 - Alguns direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="/_projeto/vagas/vagas.js"></script>
+</body>
+</html>

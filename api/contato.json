@@ -1,0 +1,26 @@
+
+{
+    "nomeFinanceiro": "Financeiro",
+    "telefoneFinanceiro": "(11) 3965-4789",
+    "emailFinanceiro": "financeiro@nitrazox.com",
+
+    "nomeRh": "RH",
+    "telefoneRh": "(11) 4285-1437",
+    "emailRh": "rh@nitrazox.com",
+
+    "nomeContabilidade": "Contabilidade",
+    "telefoneContabilidade": "(11) 4128-7439",
+    "emailContabilidade": "contabilidade@nitrazox.com",
+
+    "nomeSuporte": "Suporte",
+    "telefoneSuporte": "(11) 3548-7543",
+    "emailSuporte": "suporte@nitrazox.com",
+
+    "nomeMarketing": "Marketing",
+    "telefoneMarketing": "(11) 6548-9646",
+    "emailMarketing": "marketing@nitrazox.com",
+
+    "nomeDesen": "Dev",
+    "telefoneDesen": "(11) 5314-8514",
+    "emailDesen": "marketing@nitrazox.com"
+}

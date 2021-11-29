@@ -1,0 +1,14 @@
+[
+    {
+        "id":"1",
+        "nome": "Back-end Sênior",
+        "requisitos": "Formação em Sistemas de Informação ou afins. Inglês para leitura e escrita.",
+        "competencias": "Net Framework, C#,AW"
+    },
+    {
+        "id":"2",
+        "nome": "Programador .NET",
+        "requisitos": "Formação em Sistemas de Informação ou afins. Inglês para leitura e escrita.",
+        "competencias": "Conhecimento de configurações IIS Metodologias ágeis, SQL Server Reporting services, HTML, CSS, Bootstrap e javascript."
+    }
+]

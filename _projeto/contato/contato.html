@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family = Mulish: ital, wght @ 0,400; 0,900; 1,400 & display = swap "
+        rel=" stylesheet ">
+    <link href="/_projeto/contato/contato.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue.min.js"></script>
+    <title>Nitrazox - Contato</title>
+</head>
+
+<body>
+    <div id="contato">
+        <header>
+            <div class="center">
+                <div class="ctn-logo">
+                    <a href="/_projeto/index/index.html">
+                        <img src="/img/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="/_projeto/feedback/feedback.html">
+                        Feedback
+                    </a>
+                    <a href="/_projeto/vagas/vagas.html">
+                        Vagas
+                    </a>
+                    <a href="/_projeto/contato/contato.html">
+                        Contato
+                    </a>
+                </div>
+        </header>
+            <div class="main_cta">
+                <h2>Contatos</h2>
+            </div>
+        <section class="contato">
+            <div class="cont">
+                <div class="cont-cor">
+                    <img src="/img/telefone.png" class="cont-img">
+                </div>
+                <div class="cont-conteudo">
+                    <div>
+                        <h2 class="cont-titulo">Telefones</h2>
+                    </div>
+                    <div class="cont-info">
+                        <div class="ctn-title-contato">
+                            <p class="title-contato">{{contatos.nomeFinanceiro}}:</p>
+                            <p>{{contatos.telefoneFinanceiro}}</p>
+                        </div>
+                        <div class="ctn-title-contato">
+                            <p class="title-contato">{{contatos.nomeRh}}:</p>
+                            <p>{{contatos.telefoneRh}}</p>
+                        </div>
+                        <div class="ctn-title-contato">
+                            <p class="title-contato">{{contatos.nomeContabilidade}}:</p>
+                            <p>{{contatos.telefoneContabilidade}}</p>
+                        </div>
+                        <div class="ctn-title-contato">
+                            <p class="title-contato">{{contatos.nomeSuporte}}:</p>
+                            <p>{{contatos.telefoneSuporte}}</p>
+                        </div>
+                        <div class="ctn-title-contato">
+                            <p class="title-contato">{{contatos.nomeMarketing}}:</p>
+                            <p>{{contatos.telefoneMarketing}}</p>
+                        </div>
+                        <div class="ctn-title-contato">
+                            <p class="title-contato">{{contatos.nomeDesen}}:</p>
+                            <p>{{contatos.telefoneDesen}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="cont-cor">
+                    <img src="/img/email.png" class="cont-img">
+                </div>
+                <div class="cont-conteudo">
+                    <div>
+                        <h2 class="cont-titulo">E-mails</h2>
+                    </div>
+                    <div class="cont-info">
+                        <div>
+                            <p for="fin">{{contatos.emailFinanceiro}}</p>
+                        </div>
+                        <div>
+                            <p for="fin">{{contatos.emailRh}}</p>
+                        </div>
+                        <div>
+                            <p for="fin">{{contatos.emailContabilidade}}</p>
+                        </div>
+                        <div>
+                            <p for="fin">{{contatos.emailSuporte}}</p>
+                        </div>
+                        <div>
+                            <p for="fin">{{contatos.emailMarketing}}</p>
+                        </div>
+                        <div>
+                            <p for="fin">{{contatos.emailDesen}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="ctn-footer">
+            <div class="footer">
+                <div class="conteudo-footer">
+                    <p>© Nitrazox 2021 - Alguns direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/_projeto/contato/contato.js"></script>
+</body>
+</html>

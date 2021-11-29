@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+/*HEADER*/
+header{
+    background-color: blueviolet;
+}
+.center{
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 40px;
+    margin: 0 auto;  
+}
+
+.ctn-logo{
+    font-size: 10px;
+}   
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu a{
+    color:white;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.3s;
+}
+.menu a:hover{
+    color: #F8B206;
+}
+.menu .btn-menu{
+    background-color: rgb(231, 121, 204);
+    display: inline-block;
+    padding:8px 16px ;
+    color:black;
+    border-radius: 8px;
+}
+.menu .btn-menu:hover{
+background-color: rgb(167, 51, 161);
+color: black;
+}
+
+/*main*/
+
+section.main{
+    background-image: url('img/image-site.jpg');
+    min-height: 900px;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+.main_cta{
+    width: 100%;
+    margin: 30px auto 30px auto;
+    text-align: center;
+
+} 
+
+.main_cta h2{
+font-weight: normal;
+font-size: 60px;
+font-weight: bold;
+color: black;
+}
+
+.btn-menu{
+font-size: 18px;
+font-weight: bold; 
+text-transform: uppercase;
+background-color: blueviolet;
+display: inline-block;
+padding:20px 25px ;
+color: white;
+border-radius: 5px;
+border: 0;
+margin: 30px 0 80px 0;
+cursor: pointer;
+}
+.btn-menu:hover{
+background-color: rgb(66, 0, 128);
+color: white;
+}
+
+.diferenciais{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 70px;
+    width: 100%;
+    padding: 0 100px 0 100px;
+    margin-bottom: 60px;
+}
+
+.diferencial-single{
+    border-radius: 10px;
+    background-color: #ebe0fc;
+    width: 100%;
+    min-height: 300px;
+    padding: 30px;
+    box-shadow:  3px 3px 1px rgb(0 0 0 / 0.1);
+}
+
+.diferencial-single i{
+    color: #124265;
+    font-size: 23px;
+}
+
+.ctn-title-desc{
+    width: 100%;
+}
+
+ h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #8a2be2;
+    margin: 10px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.diferencial-single p{
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+/*footer*/
+
+.footer{
+    display: flex;
+    background: #8A2BE2;
+    height: 80px;
+    margin: 60px 0 0 0;
+}
+
+.footer .ctn-footer{
+    margin: 0 auto;
+    padding:20px 0 20px 0;
+}
+
+.ctn-footer p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media screen and (max-width: 1360px){
+    .diferenciais{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+}
+@media screen and (max-width: 630px){
+    .center{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* row-gap: 40px; */
+        margin: 0 auto;  
+        padding: 25px;
+    }
+    .ctn-logo{
+        margin: 0 auto;
+    }   
+    .logo{
+        width: 200px;
+        cursor: pointer;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu a{
+        color:white;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .main_cta h2{
+        font-size: 35px;
+        font-weight: bold;
+        color: black;
+    }
+    .diferenciais{
+        column-gap: 0px;
+        width: 100%;
+        padding: 0 20px 0 20px;
+        margin-bottom: 60px;
+    }
+    h2{
+        margin: 10px 0;
+        font-family: 'Mulish', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .diferencial-single p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+/* @media screen and (max-width: 768px){
+    .diferencial-single{ 
+    width: 100%;
+    margin-bottom: 20px;
+    
+    }
+} */

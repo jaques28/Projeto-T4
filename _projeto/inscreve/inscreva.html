@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family = Mulish: ital, wght @ 0,400; 0,900; 1,400 & display = swap "
+        rel=" stylesheet ">
+    <link href="/_projeto/inscreve/inscreva.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue.min.js"></script>
+    <title>Nitrazox - Inscreva-se</title>
+</head>
+
+<body>
+    <div id="inscreva">
+        <header>
+            <div class="center">
+                <div class="ctn-logo">
+                    <a href="/_projeto/index/index.html">
+                        <img src="/img/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="/_projeto/feedback/feedback.html">
+                        Feedback
+                    </a>
+                    <a href="/_projeto/vagas/vagas.html">
+                        Vagas
+                    </a>
+                    <a href="/_projeto/contato/contato.html">
+                        Contato
+                    </a>
+                </div>
+        </header>
+        <section class="main">
+            <div class="main_cta">
+                <h2>Inscreva-se</h2>
+            </div>
+        </section>
+        <section class="conteudo">
+            <div class="ctn-conteudo">
+                <div class="ctn-ideia">
+                    <img src="/img/vgaa.png" class="inscreva">
+                </div>
+                <div class="form">
+                    <form action="">
+                        <div class="ctn-info">
+                            <div class="ctn-namecom">
+                                <div class="completo">
+                                    <label for="namecom" class="preen">Nome Completo:</label><br>
+                                    <input type="text" id="namecom" class="inp" autocomplete="none"
+                                        v-model="dadosInscricao['nomeCompleta']">
+                                </div>
+                                <div>
+                                    <label for="dtnasc" class="preen">Data de Nascimento:</label><br>
+                                    <input type="date" id="dtnasc" class="inp" autocomplete="none"
+                                        v-model="dadosInscricao['dataNascimento']">
+                                </div>
+                            </div>
+                            <div class="ctn-em">
+                                <label for="mail" class="preen">E-mail:</label><br>
+                                <input type="email" id="mail" class="inp" autocomplete="none"
+                                    v-model="dadosInscricao['email']">
+                            </div>
+                            <div class="ctn-form">
+                                <label for="forma" class="preen">Formação Acadêmica:</label><br>
+                                <input type="text" id="forma" class="inp" autocomplete="none"
+                                    v-model="dadosInscricao['formacao']">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="ctn-departa">
+                            <span class="titulo">Área de atuação na empresa:</span>
+                            <div class="todos-radio">
+                                <div class="ctn-radio">
+                                    <input type="radio" id="dev" class="radio-input"
+                                        v-model=" dadosInscricao['areaAtuacao']" value="desenvolvimento">
+                                    <label for="dev" class="titulo-radio">Desenvolvimento</label>
+                                </div>
+                                <div class="ctn-radio">
+                                    <input type="radio" id="fin" class="radio-input"
+                                        v-model=" dadosInscricao['areaAtuacao']" value="financeiro">
+                                    <label for="fin" class="titulo-radio">Financeiro</label>
+                                </div>
+                                <div class="ctn-radio">
+                                    <input type="radio" id="sup" class="radio-input"
+                                        v-model=" dadosInscricao['areaAtuacao']" value="suporte">
+                                    <label for="sup" class="titulo-radio">Suporte</label>
+                                </div>
+                                <div class="ctn-radio">
+                                    <input type="radio" id="rh" class="radio-input" v-model=" dadosInscricao['areaAtuacao']"
+                                        value="rh">
+                                    <label for="rh" class="titulo-radio">RH</label>
+                                </div>
+                                <div class="ctn-radio">
+                                    <input type="radio" id="mar" class="radio-input"
+                                        v-model=" dadosInscricao['areaAtuacao']" value="marketing">
+                                    <label for="mar" class="titulo-radio">Marketing</label>
+                                </div>
+                                <div class="ctn-radio">
+                                    <input type="radio" id="con" class="radio-input"
+                                        v-model=" dadosInscricao['areaAtuacao']" value="contabilidade">
+                                    <label for="con" class="titulo-radio">Contabilidade</label>
+                                </div>
+                            </div>
+                            <div class="ctn-link">
+                                <span class="titulo">Deixe o link do seu Portfólio:</span>
+                                <textarea placeholder="Cole seu link aqui" class="box" type="link" v-model="dadosInscricao['link']"></textarea>
+                            </div>
+                            <div class="ctn-btn">
+                                <button class="btn-enviar" @click="enviar" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="ctn-footer">
+                <p>© Nitrazox 2021 - Alguns direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="/_projeto/inscreve/inscreva.js"></script>
+</body>
+
+</html>

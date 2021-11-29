@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Mulish: ital, wght @ 0,400; 0,900; 1,400 & display = swap "rel =" stylesheet ">
+    <link href="/_projeto/feedback/feedback.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/vue.min.js"></script>
+    <title>Nitrazox - feedback</title>
+</head>
+
+<body>
+    <div id="feedback">
+        <header>
+            <div class="center">
+                <div class="ctn-logo">
+                    <a href="/_projeto/index/index.html">
+                        <img src="/img/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="/_projeto/feedback/feedback.html">
+                        Feedback
+                    </a>
+                    <a href="/_projeto/vagas/vagas.html">
+                        Vagas
+                    </a>
+                    <a href="/_projeto/contato/contato.html"> 
+                        Contato
+                    </a>
+                </div>
+        </header>
+        <section class="main">
+            <div class="main_cta">
+                <h2>Feedback & Soluções</h2>
+            </div>
+        </section>
+        <section class="conteudo">
+            <div class="ctn-conteudo">
+                <div class="ctn-ideia">
+                    <img src="/img/ideia.png" class="ideia">
+                </div>
+                <div class="form">
+                    <form action="">
+                        <div class="ctn-dados">
+                            <span class="titulo">Dados pessoais:</span>
+                            <div class="ctn-nome">
+                                <div class="nome"> 
+                                    <label for="name" class="label">Nome:</label><br>
+                                    <input type="text" id="name" class="input" autocomplete="none" v-model="dadosFeed['nome']">
+                                </div>
+                                <div>
+                                    <label for="sobrenome" class="label">Sobrenome:</label><br>
+                                    <input type="text" id="sobrenome" class="input" autocomplete="none" v-model="dadosFeed['sobrenome']">
+                                </div>
+                            </div>
+                            <div class="ctn-email">
+                                <label for="email" class="label">E-mail:</label><br>
+                                <input type="email" id="email" class="input" autocomplete="none" v-model="dadosFeed['email']">
+                            </div>
+                        </div>
+                        <div class="ctn-departamento">
+                            <span class="titulo">Departamento:</span>
+                            <div class="todos-radio">
+                                <div class="ctn-radio">
+                                    <input type="radio" id="dev" class="radio-input" v-model="dadosFeed['departamento']" value="desenvolvimento">
+                                    <label for="dev" class="titulo-radio">Desenvolvimento</label>
+                                </div>
+                                <div class="ctn-radio">
+                                    <input type="radio" id="fin"  class="radio-input" v-model="dadosFeed['departamento']" value="financeiro">
+                                    <label for="fin" class="titulo-radio">Financeiro</label>
+                                </div>
+                                <div class="ctn-radio">
+                                    <input type="radio" id="sup"  class="radio-input" v-model="dadosFeed['departamento']" value="suporte">
+                                    <label for="sup" class="titulo-radio">Suporte</label>
+                                </div>
+                                <div class="ctn-radio">
+                                    <input type="radio" id="rh"  class="radio-input" v-model="dadosFeed['departamento']" value="rh">
+                                    <label for="rh" class="titulo-radio">RH</label>
+                                </div>
+                                <div class="ctn-radio">
+                                    <input type="radio" id="mar"  class="radio-input" v-model="dadosFeed['departamento']" value="marketing">
+                                    <label for="mar" class="titulo-radio">Marketing</label>
+                                </div>
+                                <div class="ctn-radio">
+                                    <input type="radio" id="con"  class="radio-input" v-model="dadosFeed['departamento']" value="contabilidade">
+                                    <label for="con" class="titulo-radio">Contabilidade</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ctn-feed">
+                            <span class="titulo">Feedback:</span>
+                            <textarea placeholder="Deixe sua mensagem..." class="box" v-model="dadosFeed['feedback']"></textarea>
+                        </div>
+                        <div class="ctn-btn">
+                            <button class="btn-enviar" type="submit" @click="enviar" type="button">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+        </section>
+        <!-- <div class="ctn-enviado" :class="ativo: mensagemAtiva">
+            <div class="enviado">
+                <p class="msg">{{mensagem}}</p>
+            </div>
+        </div> -->
+        <footer class="ctn-footer">
+            <div class="footer">
+                <div class="conteudo-footer">
+                    <p>© Nitrazox 2021 - Alguns direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/_projeto/feedback/feedback.js"></script>
+</body>
+
+</html>

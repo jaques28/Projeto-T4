@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+/*HEADER*/
+header{
+    background-color: blueviolet;
+}
+.center{
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 40px;
+    margin: 0 auto;  
+}
+.ctn-logo{
+    font-size: 10px;
+}   
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu a{
+    color:white;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.3s;
+}
+.menu a:hover{
+    color: #F8B206;
+}
+.menu .btn-menu{
+    background-color: rgb(231, 121, 204);
+    display: inline-block;
+    padding:8px 16px ;
+    color:black;
+    border-radius: 8px;
+}
+.menu .btn-menu:hover{
+background-color: rgb(167, 51, 161);
+color: black;
+}
+
+
+/*main*/
+
+.main_cta{
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+
+} 
+
+.main_cta h2{
+font-weight: normal;
+font-size: 60px;
+font-weight: bold;
+color: black;
+}
+
+
+/* conteudo dos contatos */
+
+.contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    width: 1160px;
+    margin: 60px auto 125px auto;
+}
+
+.cont{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px rgb(0 0 0 / 5%);
+}
+.cont-cor{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #8A2BE2;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+}
+.cont-img{
+    width: 150px;
+}
+.cont-conteudo{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.cont-titulo{
+    font-size: 35px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/* .cont-conteudo{
+    display: grid;
+    grid-template-columns: 1fr;
+} */
+.cont-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2px;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+.ctn-title-contato{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.title-contato{
+    font-size: 25px;
+font-weight: bold;
+}
+.cont-info p{
+    display: flex;
+    margin: 0 0 0 5px;
+    font-size: 16px;
+}
+
+/*footer*/
+.ctn-footer{
+    position:absolute;
+    width:100%;
+}
+.footer{
+    display: flex;
+    background: #8A2BE2;
+    height: 80px;
+    margin: 60px 0 0 0;
+}
+.conteudo-footer{
+    margin: 0 auto;
+    padding:20px 0 20px 0;
+}
+.conteudo-footer p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 1360px){
+    .diferenciais{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .contato{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+        width: 100%;
+        padding: 0 30px 0 30px;
+        /* margin: 60px auto 60px auto; */
+    }
+}
+@media screen and (max-width: 630px){
+    .center{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* row-gap: 40px; */
+        margin: 0 auto;  
+        padding: 25px;
+    }
+    .ctn-logo{
+        margin: 0 auto;
+    }   
+    .logo{
+        width: 200px;
+        cursor: pointer;
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu a{
+        color:white;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .main_cta h2{
+        font-size: 35px;
+        font-weight: bold;
+        color: black;
+    }
+    .diferenciais{
+        column-gap: 0px;
+        width: 100%;
+        padding: 0 20px 0 20px;
+        margin-bottom: 60px;
+    }
+    h2{
+        margin: 10px 0;
+        font-family: 'Mulish', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .diferencial-single p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .cont-info{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .cont-info p{
+        justify-content: center;
+        text-align: center;
+    }
+}
